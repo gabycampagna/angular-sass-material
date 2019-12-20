@@ -1,0 +1,57 @@
+html {
+    @include prefix('box-sizing', 'border-box', moz webkit);
+  }
+  
+  *,
+  *:before,
+  *:after {
+    @include prefix('box-sizing', 'inherit', moz webkit);
+  }
+
+body {
+    @include font-size(16);
+  }
+  
+p {
+    @include font-size(12, 10);
+}
+
+.menu li {
+    @include relative;
+}
+  
+.sub-menu {
+@include absolute(top 100% left 0);
+}
+
+.sticky-bar {
+@include fixed(top 0 left 0);
+}
+
+.fade {
+@include opacity(.4);
+}
+
+.gradient {
+    @include gradient(#07c, #06f, vertical);
+}
+
+a {
+    color: $link;
+    text-decoration: none;
+    box-shadow: $color-shadow;
+
+    &:visited{
+        color: $visit;
+    }
+
+    &:active {
+        color: $link; 
+    }
+
+    &:hover {
+        color: $hover; 
+        text-decoration: underline;
+    }
+
+}

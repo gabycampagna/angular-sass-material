@@ -1,0 +1,37 @@
+// Descriptive color variables
+
+$white          : #fff;
+$black          : #000;
+$grey           : #878787;
+$regent-st-blue : #add8e6;
+$river-bed      : #48525c;
+$yellow-orange  : #ffa949;
+
+// Red Color Variables
+$blood:     #68121a;
+$brick:     #581207;
+$apple:     #fa041b;
+$coral:     #e47f88;
+
+// Blue Color Variables
+$midnight:  #2e3e5c;
+$blueberry: #0067ac;
+$dusk:      #5f6f8e;
+
+// Functional color variables
+
+$color-border-light : lighten($grey, 35%);
+$color-border-dark  : $dusk;
+
+
+$color-shadow       : rgba($black,.8);
+$color-body         : $white;
+
+
+$font-base: 12px;
+
+$link:       #5f6f8e;
+$visit:      #0067ac;
+$active:     #5f6f8e;
+$hover:      #2e3e5c;
+
